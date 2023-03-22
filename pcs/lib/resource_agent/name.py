@@ -53,6 +53,7 @@ def split_resource_agent_name(full_agent_name: str) -> ResourceAgentName:
         "stonith",
         "systemd",
         "upstart",
+        "dlopen",
     }
     if standard not in allowed_standards:
         raise InvalidResourceAgentName(full_agent_name)
